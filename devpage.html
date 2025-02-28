@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingMine - Desenvolvimento</title>
+    <link rel="shortcut icon" href="./src/assets/icons/favicon3.png" type="image/x-icon" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #000000, #ff7b00);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Navbar existente */
+        .navbar {
+            background-color: #000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ff7b00;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+            margin-right: 20px;
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        
+        .navbar a:hover {
+            background-color: #333;
+        }
+        
+        /* Dropdown existente */
+        .dropdown {
+            overflow: hidden;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Conteúdo da página */
+        .content {
+            flex: 1;
+            padding: 50px 20px;
+            color: white;
+            text-align: center;
+        }
+        
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+        
+        .dev-card2 {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dev-card2 h2 {
+            color: #8fff4e;
+            margin-bottom: 15px;
+        }
+        
+        .dev-card1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dev-card1 h2 {
+            color: #00b7ff;
+            margin-bottom: 15px;
+        }
+        /* Footer */
+        .footer {
+            background-color: #000;
+            color: white;
+            padding: 30px 20px;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+        }
+        
+        .footer-section h3 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #FF8C00;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        .footer-links a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #FF8C00;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-icon:hover {
+            background-color: #FF8C00;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar existente -->
+    <div class="navbar">
+        <div class="logo">
+              <img src="./src/assets/icons/logokingmine.png" alt="Logo" />
+          </div>
+
+        <a href="Server.html">Home</a>
+        <div class="dropdown">
+            <a href="#jogos">Jogos</a>
+            <div class="dropdown-content">
+                <a href="MinecraftBT.html">Minecraft Beautiful</a>
+                <a href="devpage.html">Bedrock Edition</a>
+            </div>
+        </div>
+        <a href="servidores.html">Servidores</a>
+        <a href="devpage.html">Sobre</a>
+        <a href="devpage.html">Suporte</a>
+    </div>
+    
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <h1>Pagina em Desenvolvimento</h1>
+        <p>Ops! Essa é uma pagina em desenvolvimento. Volte mais Tarde quando essa pagina estiver terminada. Enquanto isso veja os nossos projetos!
+        </p>
+        
+        <div class="dev-card1">
+            <h2>Minecraft Beautiful</h2>
+            <p>Nossa versão aprimorada do Minecraft com gráficos realistas, texturas em alta definição e efeitos visuais avançados. Projetado para proporcionar uma experiência visual imersiva mantendo a jogabilidade clássica que todos amam.</p>
+        </div>
+        
+        <div class="dev-card2">
+            <h2>Bedrock Edition Para PS3</h2>
+            <p>Projeto ambicioso para trazer a Bedrock Edition para o PlayStation 3, permitindo que jogadores de console mais antigos desfrutem das mais recentes atualizações e recursos do Minecraft, incluindo o cross-play com outras plataformas.</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#jogos">Jogos</a>
+                    <a href="servidores.html">Servidores</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="suporte.html">Suporte</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Recursos</h3>
+                <div class="footer-links">
+                    <a href="#">Downloads</a>
+                    <a href="#">Tutoriais</a>
+                    <a href="#">Mods & Texturas</a>
+                    <a href="#">Fórum da Comunidade</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>maximusgfortes@gmail.com</p>
+                <p>São Paulo, Brasil</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">DC</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 KingMineStudios - Todos os direitos reservados</p>
+        </div>
+    </div>
+</body>
+</html>

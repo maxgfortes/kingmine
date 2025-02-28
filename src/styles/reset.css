@@ -1,0 +1,32 @@
+/* Reset CSS */
+
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+
+
+ol,
+ul {
+  list-style: none;
+}
